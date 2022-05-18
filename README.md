@@ -1,6 +1,8 @@
 # react-inpost-geowidget
 A simple React.js component for Inpost Geowidget
 
+[![Unit Tests](https://github.com/AshmaDev/react-inpost-geowidget/actions/workflows/node.js.yml/badge.svg)](https://github.com/AshmaDev/react-inpost-geowidget/actions/workflows/node.js.yml)
+
 ## Getting Started
 
 This package includes a simple React.js Component for Inpost Geowidget (v5 Beta). See [docs](https://dokumentacja-inpost.atlassian.net/wiki/spaces/PL/pages/50069505/Geowidget+v5+Beta) for more details.
