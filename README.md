@@ -1,7 +1,7 @@
 # react-inpost-geowidget
 A simple React.js component for Inpost Geowidget
 
-[![Unit Tests](https://github.com/AshmaDev/react-inpost-geowidget/actions/workflows/node.js.yml/badge.svg)](https://github.com/AshmaDev/react-inpost-geowidget/actions/workflows/node.js.yml)
+[![Tests](https://github.com/AshmaDev/react-inpost-geowidget/actions/workflows/node.js.yml/badge.svg)](https://github.com/AshmaDev/react-inpost-geowidget/actions/workflows/node.js.yml)
 
 ## Getting Started
 
