@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 interface InpostGeowidgetProps {
   token: string;
-  onpoint: (e: Event) => void;
+  onpoint: (e?: any) => void;
   language?: string;
   config?: string;
 }
