@@ -12,7 +12,7 @@ This package includes a simple React.js Component for Inpost Geowidget (v5 Beta)
 ```sh
 npm i react-inpost-geowidget
 # or
-npm i react-inpost-geowidget
+yarn add react-inpost-geowidget
 ```
 
 ### Usage
