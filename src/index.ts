@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 
-interface InpostGeowidgetProps {
+export type InpostGeowidgetProps = {
   token: string;
   onpoint: (e?: any) => void;
   language?: string;
   config?: string;
 }
 
-const InpostGeowidget = ({
+export const InpostGeowidget = ({
   token,
   onpoint,
   language = "pl",
@@ -36,5 +36,3 @@ const InpostGeowidget = ({
     config,
   });
 };
-
-export { InpostGeowidgetProps, InpostGeowidget };
