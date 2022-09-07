@@ -28,12 +28,12 @@ function App() {
   const onPointCallback = (e) => {
     console.log(e);
   }
-  
+
   return (
     <div className="App">
-      <InpostGeowidget 
+      <InpostGeowidget
         token={YOUR_API_TOKEN}
-        onpoint={onPointCallback}
+        onPoint={onPointCallback}
       />
     </div>
   );
