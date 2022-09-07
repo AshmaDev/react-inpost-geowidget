@@ -1,18 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useCallback } from "react";
+
+declare global {
+  interface Window { onPoint: any; }
+}
 
 export type InpostGeowidgetProps = {
   token: string;
-  onpoint: (e?: any) => void;
+  onPoint: (e?: any) => void;
   language?: string;
   config?: string;
 }
 
 export const InpostGeowidget = ({
   token,
-  onpoint,
+  onPoint,
   language = "pl",
   config = "parcelCollect",
 }: InpostGeowidgetProps): any => {
+
+  const callback = useCallback((e: any) => onPoint(e), [onPoint]);
+
   useEffect(() => {
     const css: HTMLLinkElement = document.createElement("link"),
       js: HTMLScriptElement = document.createElement("script"),
@@ -29,9 +36,13 @@ export const InpostGeowidget = ({
     body.appendChild(js);
   }, []);
 
+  useEffect(() => {
+    window.onPoint = callback
+  }, [callback])
+
   return React.createElement("inpost-geowidget", {
     token,
-    onpoint,
+    onPoint: "onPoint",
     language,
     config,
   });
